@@ -1,11 +1,68 @@
 
 https://www.hackerrank.com/challenges/japan-population/problem
 
-##Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.##
+1)Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.##
 
+      *\ select *
+       from CITY
+       where COUNTRYCODE = "JPN" */
+ ==========================================================================================================================
+ 2)Query all columns for all American cities in CITY with populations larger than 100000. The CountryCode for America is USA.
+ The CITY table is described as follows:
+    
+    FIELD                Type
+      id                 number
+      name               varchar 2(17)
+      countrycode        varchar 2 (3)
+      district           varchar 2 (20)
+      population         Number
+      
+           *\   select* 
+                From City
+                Where Population > 100000 And CountryCode="USA"  */
+================================================================================================================================
+3)Query the names of all American cities in CITY with populations larger than 120000. The CountryCode for America is USA.
+The CITY table is described as follows:
+ FIELD                Type
+      id                 number
+      name               varchar 2(17)
+      countrycode        varchar 2 (3)
+      district           varchar 2 (20)
+      population         Number
+      
+                 *\    Select Name
+                     From City
+                     Where Population > 120000 And CountryCode = "USA"  */
+==================================================================================================================================
+4)Query all columns (attributes) for every row in the CITY table.
+The CITY table is described as follows:
+ FIELD                Type
+      id                 number
+      name               varchar 2(17)
+      countrycode        varchar 2 (3)
+      district           varchar 2 (20)
+      population         Number
+      
+                *\    
+                        Select ID,NAME,COUNTRYCODE,DISTRICT,POPULATION 
+                        From City 
+                     */
+==================================================================================================================================
+5)Query all columns for a city in CITY with the ID 1661.
+The CITY table is described as follows:
+ FIELD                Type
+      id                 number
+      name               varchar 2(17)
+      countrycode        varchar 2 (3)
+      district           varchar 2 (20)
+      population         Number
+            
+            
+               *\
+               Select ID,Name,CountryCode,District,Population
+               From CITY
+               Where ID = 1661
+               */
+======================================================================================================================================
 
-select *
-from CITY
-where COUNTRYCODE = "JPN"
-
-
+      
